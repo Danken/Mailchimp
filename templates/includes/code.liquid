@@ -35,6 +35,13 @@
                 /*@editable*/ background-color:#f3f3f3;
             }
 
+            p {
+                font-family: Helvetica;
+                font-size: 14px;
+                font-weight: normal;
+                line-height: 140%;
+            }
+
             /**
             * @tab Page
             * @section background style
@@ -64,10 +71,10 @@
                 /*@editable*/ color:#202020 !important;
                 display:block;
                 /*@editable*/ font-family:Helvetica;
-                /*@editable*/ font-size:30px;
+                /*@editable*/ font-size:35px;
                 /*@editable*/ font-style:normal;
                 /*@editable*/ font-weight:bold;
-                /*@editable*/ line-height:120%;
+                /*@editable*/ line-height:110%;
                 /*@editable*/ letter-spacing:normal;
                 margin-top:0;
                 margin-right:0;
@@ -110,7 +117,7 @@
                 font-family:Helvetica;
                 font-size:16px;
                 font-weight:bold;
-                line-height:120%;
+                line-height:140%;
                 letter-spacing:normal;
                 margin-top:0;
                 margin-right:0;
@@ -151,7 +158,6 @@
             */
             #templatePreheader{
                 /*@editable*/ background-color:#FFFFFF;
-                /*@editable*/ border-bottom:1px solid #CCCCCC;
             }
 
             /**
@@ -186,8 +192,8 @@
             */
             #templateHeader{
                 /*@editable*/ background-color:#FFFFFF;
-                /*@editable*/ border-top:1px solid #FFFFFF;
-                /*@editable*/ border-bottom:1px solid #CCCCCC;
+                margin-bottom: 20px;
+                margin-top: 20px;
             }
 
             /**
@@ -220,10 +226,16 @@
                 /*@editable*/ text-decoration:underline;
             }
 
+            .headerCopy {
+                padding: 20px;
+            }
+
             #headerImage{
+                display: block;
                 height:auto;
                 max-width:600px;
             }
+
 
             /* ========== Body Styles ========== */
 
@@ -232,10 +244,9 @@
             * @section body style
             * @tip Set the background color and borders for your email's body area.
             */
-            #templateBody{
+            .templateBody{
                 /*@editable*/ background-color:#FFFFFF;
-                /*@editable*/ border-top:1px solid #FFFFFF;
-                /*@editable*/ border-bottom:1px solid #CCCCCC;
+                margin-bottom: 20px;
             }
 
             /**
@@ -510,15 +521,29 @@
                             </tr>
                             <tr>
                                 <td align="center" valign="top">
-                                    <!-- BEGIN HEADER // -->
+
+
+
+                                    <!-- BEGIN CONTENT_HEADER // -->
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
                                         <tr>
                                             <td valign="top" class="headerContent">
-                                                <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:allowdesigner mc:allowtext />
+                                                <img src="https://dl.dropboxusercontent.com/u/2367417/sensus_mejltopp_600.png" style="max-width:600px;" id="headerImage" />
+                                                <img src="https://dl.dropboxusercontent.com/u/2367417/sensus_bild_placeholder_600.png" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:hideable mc:allowdesigner mc:allowtext />
+                                                <div class="headerCopy" mc:edit="header_copy">
+                                                    <h1>H1 Rubrik</h1>
+                                                    <h3>H3 Rubrik</h3>
+                                                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                                                    <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                                                </div>
                                             </td>
                                         </tr>
                                     </table>
-                                    <!-- // END HEADER -->
+                                    <!-- // CONTENT_HEADER -->
+
+
+
+
                                 </td>
                             </tr>
                             <tr>
@@ -528,11 +553,34 @@
 
 
 
-                                    <!-- BEGIN CONTENT_ELEMENT_01 // -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" mc:repetable="arrangemang">
+                                    <!-- BEGIN CONTENT_GENERIC // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateBody" mc:repetable="generic">
                                         <tr>
-                                            <td class="bodyContent" style="padding:0;">
-                                                <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" style="max-width:600px;" id="bodyImage" mc:label="body_image" mc:edit="body_image" mc:allowtext />
+                                            <td class="bodyContent" style="padding:20px; padding-bottom: 0px;">
+                                                <img src="https://dl.dropboxusercontent.com/u/2367417/sensus_bild_placeholder_600.png" style="max-width:560px;" id="bodyImage" mc:label="body_image" mc:edit="body_image" mc:allowdesigner mc:allowtext />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="bodyContent">
+                                                <h1 mc:edit="arrangemang_content00">Flamenco snabbt tempo, avancerad dans</h1>
+                                                <h3 mc:edit="arrangemang_content01">I flamencon är hållning och rytm viktiga element. Stilen kommer från sydspanien och har ett mycket varierat uttryckssätt från allvar till glädje. Lektionerna innehåller fotteknik olika stampar arm och handövningar och handklapp palmas. </h3>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+                                                <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <!-- // END CONTENT_GENERIC -->
+
+
+
+
+
+                                    <!-- BEGIN CONTENT_ARRANGEMANG // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateBody" mc:repetable="arrangemang">
+                                        <tr>
+                                            <td class="bodyContent" style="padding:20px; padding-bottom: 0px;">
+                                                <img src="https://dl.dropboxusercontent.com/u/2367417/sensus_bild_placeholder_600.png" style="max-width:560px;" id="bodyImage" mc:label="body_image" mc:edit="body_image" mc:allowdesigner mc:allowtext />
                                             </td>
                                         </tr>
                                         <tr>
@@ -589,7 +637,7 @@
                                             </td>
                                         </tr>
                                     </table>
-                                    <!-- // END CONTENT_ELEMENT_01 -->
+                                    <!-- // END CONTENT_ARRANGEMANG -->
 
 
 
