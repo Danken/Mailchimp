@@ -32,7 +32,7 @@
             * @theme page
             */
             body, #bodyTable{
-                /*@editable*/ background-color:#DEE0E2;
+                /*@editable*/ background-color:#f3f3f3;
             }
 
             /**
@@ -64,10 +64,10 @@
                 /*@editable*/ color:#202020 !important;
                 display:block;
                 /*@editable*/ font-family:Helvetica;
-                /*@editable*/ font-size:26px;
+                /*@editable*/ font-size:30px;
                 /*@editable*/ font-style:normal;
                 /*@editable*/ font-weight:bold;
-                /*@editable*/ line-height:100%;
+                /*@editable*/ line-height:120%;
                 /*@editable*/ letter-spacing:normal;
                 margin-top:0;
                 margin-right:0;
@@ -89,7 +89,7 @@
                 /*@editable*/ font-size:20px;
                 /*@editable*/ font-style:normal;
                 /*@editable*/ font-weight:bold;
-                /*@editable*/ line-height:100%;
+                /*@editable*/ line-height:120%;
                 /*@editable*/ letter-spacing:normal;
                 margin-top:0;
                 margin-right:0;
@@ -107,12 +107,11 @@
             h3{
                 /*@editable*/ color:#606060 !important;
                 display:block;
-                /*@editable*/ font-family:Helvetica;
-                /*@editable*/ font-size:16px;
-                /*@editable*/ font-style:italic;
-                /*@editable*/ font-weight:normal;
-                /*@editable*/ line-height:100%;
-                /*@editable*/ letter-spacing:normal;
+                font-family:Helvetica;
+                font-size:16px;
+                font-weight:bold;
+                line-height:120%;
+                letter-spacing:normal;
                 margin-top:0;
                 margin-right:0;
                 margin-bottom:10px;
@@ -151,7 +150,7 @@
             * @theme header
             */
             #templatePreheader{
-                /*@editable*/ background-color:#F4F4F4;
+                /*@editable*/ background-color:#FFFFFF;
                 /*@editable*/ border-bottom:1px solid #CCCCCC;
             }
 
@@ -186,7 +185,7 @@
             * @theme header
             */
             #templateHeader{
-                /*@editable*/ background-color:#F4F4F4;
+                /*@editable*/ background-color:#FFFFFF;
                 /*@editable*/ border-top:1px solid #FFFFFF;
                 /*@editable*/ border-bottom:1px solid #CCCCCC;
             }
@@ -234,7 +233,7 @@
             * @tip Set the background color and borders for your email's body area.
             */
             #templateBody{
-                /*@editable*/ background-color:#F4F4F4;
+                /*@editable*/ background-color:#FFFFFF;
                 /*@editable*/ border-top:1px solid #FFFFFF;
                 /*@editable*/ border-bottom:1px solid #CCCCCC;
             }
@@ -251,8 +250,8 @@
                 /*@editable*/ font-size:14px;
                 /*@editable*/ line-height:150%;
                 padding-top:20px;
-                padding-right:20px;
                 padding-bottom:20px;
+                padding-right:20px;
                 padding-left:20px;
                 /*@editable*/ text-align:left;
             }
@@ -274,6 +273,46 @@
                 max-width:560px;
             }
 
+            /* ========== Arrangeman Styles ========== */
+
+            .arrangemangList {
+                font-family:Helvetica;
+                font-size:16px;
+                line-height:150%;
+                padding-right:20px;
+                padding-left:20px;
+            }
+
+            .arrangemangListInner {
+                padding-top:12px;
+                padding-bottom:12px;
+                border-top: 1px solid #dddddd;
+            }
+
+            .arrangemangListApply {
+                padding-top:0px;
+                padding-bottom:12px;
+                text-align: center;
+                padding-right:20px;
+                padding-left:20px;
+            }
+
+            a.CTA {
+                display: inline-block;
+                font-family:Helvetica;
+                font-weight: bold;
+                font-size:16px;
+                margin-top: 12px;
+                color: #fff;
+                width: 250px;
+                line-height: 60px;
+                text-decoration: none;
+                background: #2087b1;
+
+            }
+
+
+
             /* ========== Footer Styles ========== */
 
             /**
@@ -283,7 +322,7 @@
             * @theme footer
             */
             #templateFooter{
-                /*@editable*/ background-color:#F4F4F4;
+                /*@editable*/ background-color:#FFFFFF;
                 /*@editable*/ border-top:1px solid #FFFFFF;
             }
 
@@ -347,7 +386,7 @@
                 */
                 h1{
                     /*@editable*/ font-size:24px !important;
-                    /*@editable*/ line-height:100% !important;
+                    /*@editable*/ line-height:120% !important;
                 }
 
                 /**
@@ -357,7 +396,7 @@
                 */
                 h2{
                     /*@editable*/ font-size:20px !important;
-                    /*@editable*/ line-height:100% !important;
+                    /*@editable*/ line-height:120% !important;
                 }
 
                 /**
@@ -367,7 +406,7 @@
                 */
                 h3{
                     /*@editable*/ font-size:18px !important;
-                    /*@editable*/ line-height:100% !important;
+                    /*@editable*/ line-height:120% !important;
                 }
 
                 /**
@@ -487,29 +526,72 @@
 
 
 
-                                    <!-- BEGIN BODY // -->
-                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody">
+
+
+                                    <!-- BEGIN CONTENT_ELEMENT_01 // -->
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateBody" mc:repetable="arrangemang">
                                         <tr>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content00">
-                                                <h1>Designing Your Template</h1>
-                                                <h3>Creating a good-looking email is simple</h3>
-                                                Customize your template by clicking on the style editor tabs up above. Set your fonts, colors, and styles. After setting your styling is all done you can click here in this area, delete the text, and start adding your own awesome content.
+                                            <td class="bodyContent" style="padding:0;">
+                                                <img src="http://gallery.mailchimp.com/2425ea8ad3/images/header_placeholder_600px.png" style="max-width:600px;" id="bodyImage" mc:label="body_image" mc:edit="body_image" mc:allowtext />
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td class="bodyContent" style="padding-top:0; padding-bottom:0;">
-                                                <img src="http://gallery.mailchimp.com/27aac8a65e64c994c4416d6b8/images/body_placeholder_650px.png" style="max-width:560px;" id="bodyImage" mc:label="body_image" mc:edit="body_image" mc:allowtext />
+                                            <td valign="top" class="bodyContent">
+                                                <h1 mc:edit="arrangemang_content00">Flamenco snabbt tempo, avancerad dans</h1>
+                                                <h3 mc:edit="arrangemang_content01">I flamencon är hållning och rytm viktiga element. Stilen kommer från sydspanien och har ett mycket varierat uttryckssätt från allvar till glädje. Lektionerna innehåller fotteknik olika stampar arm och handövningar och handklapp palmas. </h3>
                                             </td>
                                         </tr>
                                         <tr>
-                                            <td valign="top" class="bodyContent" mc:edit="body_content01">
-                                                <h2>Styling Your Content</h2>
-                                                <h4>Make your email easy to read</h4>
-                                                After you enter your content, highlight the text you want to style and select the options you set in the style editor in the "<em>styles</em>" drop down box. Want to <a href="http://www.mailchimp.com/kb/article/im-using-the-style-designer-and-i-cant-get-my-formatting-to-change" target="_blank">get rid of styling on a bit of text</a>, but having trouble doing it? Just use the "<em>remove formatting</em>" button to strip the text of any formatting and reset your style. 
+                                            <td valign="top" class="arrangemangList">
+                                                <div class="arrangemangListInner">
+                                                    <h3 style="display: inline-block; width: 150px; margin-bottom: 0;" mc:edit="arrangemang_content02">Startdatum</h3>
+                                                    <div style="display: inline-block; width: 250px;" mc:edit="arrangemang_content03">Onsdag 28 augusti</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="arrangemangList">
+                                                <div class="arrangemangListInner">
+                                                    <h3 style="display: inline-block; width: 150px; margin-bottom: 0;" mc:edit="arrangemang_content03">Tid</h3>
+                                                    <div style="display: inline-block; width: 250px;" mc:edit="arrangemang_content04">Kl 19.30 – 21.00</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="arrangemangList">
+                                                <div class="arrangemangListInner">
+                                                    <h3 style="display: inline-block; width: 150px; margin-bottom: 0;" mc:edit="arrangemang_content05">Var</h3>
+                                                    <div style="display: inline-block; width: 250px;" mc:edit="arrangemang_content06">Stockholm, Medborgarhuset</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="arrangemangList">
+                                                <div class="arrangemangListInner">
+                                                    <h3 style="display: inline-block; width: 150px; margin-bottom: 0;" mc:edit="arrangemang_content07">Pris</h3>
+                                                    <div style="display: inline-block; width: 250px;" mc:edit="arrangemang_content08">1650 kr</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="arrangemangList">
+                                                <div class="arrangemangListInner">
+                                                    <h3 style="display: inline-block; width: 150px; margin-bottom: 0;" mc:edit="arrangemang_content09">Tillfällen</h3>
+                                                    <div style="display: inline-block; width: 250px;" mc:edit="arrangemang_content10">10 tillfällen à 2 timmar</div>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td valign="top" class="arrangemangListApply">
+                                                <div class="arrangemangListInner">
+                                                    <a href="#" class="CTA" mc:edit="arrangemang_content10">Läs mer och anmäl dig!</a>
+                                                </div>
                                             </td>
                                         </tr>
                                     </table>
-                                    <!-- // END BODY -->
+                                    <!-- // END CONTENT_ELEMENT_01 -->
+
+
 
 
 
