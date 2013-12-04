@@ -34,6 +34,7 @@
                 font-size: 14px;
                 font-weight: normal;
                 line-height: 140%;
+                margin-top: 0;
             }
 
             #bodyCell{
@@ -61,7 +62,7 @@
             }
 
             h2{
-                color:#404040 !important;
+                color:#202020 !important;
                 display:block;
                 font-family:Helvetica;
                 font-size:20px;
@@ -77,7 +78,7 @@
             }
 
             h3{
-                color:#606060 !important;
+                color:#202020 !important;
                 display:block;
                 font-family:Helvetica;
                 font-size:16px;
@@ -86,25 +87,39 @@
                 letter-spacing:normal;
                 margin-top:0;
                 margin-right:0;
-                margin-bottom:10px;
                 margin-left:0;
+                margin-bottom: 0;
                 text-align:left;
             }
 
+            h3.ingress {
+                margin-bottom: 10px;
+            }
+
             h4{
-                color:#808080 !important;
-                display:block;
-                font-family:Helvetica;
-                font-size:14px;
-                font-style:italic;
-                font-weight:normal;
-                line-height:100%;
-                letter-spacing:normal;
-                margin-top:0;
-                margin-right:0;
-                margin-bottom:10px;
-                margin-left:0;
-                text-align:left;
+                color:          #202020 !important;
+                display:        block;
+                font-family:    Helvetica;
+                font-size:      14px;
+                font-weight:    normal;
+                line-height:    100%;
+                letter-spacing: normal;
+                margin-top:     0;
+                margin-right:   0;
+                margin-bottom:  10px;
+                margin-left:    0;
+                text-align:     left;
+            }
+
+            blockquote {
+                font-style: italic;
+                font-weight: bold;
+                font-size: 16px;
+                border-left: 10px solid #83a81c;
+                padding-left: 24px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                margin-left: 0;
             }
 
             /* ========== Header Styles ========== */
@@ -167,7 +182,7 @@
             /* ========== Body Styles ========== */
 
             .templateBody{
-                /*@editable*/ background-color:#FFFFFF;
+                background-color:#FFFFFF;
                 margin-bottom: 20px;
             }
 
@@ -180,11 +195,11 @@
                 padding-bottom:20px;
                 padding-right:20px;
                 padding-left:20px;
-                /*@editable*/ text-align:left;
+                text-align:left;
             }
 
             .bodyContent a:link, .bodyContent a:visited, /* Yahoo! Mail Override */ .bodyContent a .yshortcuts /* Yahoo! Mail Override */{
-                color:#EB4102;
+                color:#2087b1;
                 font-weight:normal;
                 text-decoration:underline;
             }
@@ -351,11 +366,11 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templatePreheader">
                                         <tr>
                                             <td valign="top" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:20px;" mc:edit="preheader_content00">
-                                                Use this area to offer a short teaser of your email's content. Text here will show in the preview area of some email clients.
+                                                Den här texten kommer att visas i vissa mejlklienters förhandsvisning. Se den som en utvidgad rubrik.
                                             </td>
                                             <!-- *|IFNOT:ARCHIVE_PAGE|* -->
                                             <td valign="top" width="180" class="preheaderContent" style="padding-top:10px; padding-right:20px; padding-bottom:10px; padding-left:0;" mc:edit="preheader_content01">
-                                                Email not displaying correctly?<br /><a href="*|ARCHIVE|*" target="_blank">View it in your browser</a>.
+                                                Ser mejlet konstigt ut?<br /><a href="*|ARCHIVE|*" target="_blank">Visa det i din webbläsare istället</a>.
                                             </td>
                                             <!-- *|END:IF|* -->
                                         </tr>
@@ -373,10 +388,10 @@
                                         <tr>
                                             <td valign="top" class="headerContent">
                                                 <img src="https://dl.dropboxusercontent.com/u/2367417/sensus_mejltopp_600.png" style="max-width:600px;" id="headerImage" />
-                                                <img src="https://dl.dropboxusercontent.com/u/2367417/sensus_bild_placeholder_600.png" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:hideable mc:allowdesigner mc:allowtext />
+                                                <img src="https://dl.dropboxusercontent.com/u/2367417/sensus_bild_placeholder_600.png" style="max-width:600px;" id="headerImage" mc:label="header_image" mc:edit="header_image" mc:hideable mc:allowdesigner />
                                                 <div class="headerCopy" mc:edit="header_copy">
                                                     <h1>H1 Rubrik</h1>
-                                                    <h3>H3 Rubrik</h3>
+                                                    <h3 class="ingress">H3 Ingress</h3>
                                                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
                                                     <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
                                                 </div>
@@ -401,16 +416,18 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateBody" mc:repeatable="article" mc:variant=“Artikel”>
                                         <tr>
                                             <td class="bodyContent" style="padding:20px; padding-bottom: 0px;">
-                                                <img src="https://dl.dropboxusercontent.com/u/2367417/sensus_bild_placeholder_600.png" style="max-width:560px;" id="bodyImage" mc:label="body_image" mc:edit="body_image" mc:allowdesigner mc:allowtext />
+                                                <img src="https://dl.dropboxusercontent.com/u/2367417/sensus_bild_placeholder_600.png" style="max-width:560px;" id="bodyImage" mc:label="body_image" mc:edit="body_image" mc:allowdesigner />
                                             </td>
                                         </tr>
                                         <tr>
                                             <td valign="top" class="bodyContent">
                                                 <h1 mc:edit="arrangemang_content00">Flamenco snabbt tempo, avancerad dans</h1>
-                                                <h3 mc:edit="arrangemang_content01">I flamencon är hållning och rytm viktiga element. Stilen kommer från sydspanien och har ett mycket varierat uttryckssätt från allvar till glädje. Lektionerna innehåller fotteknik olika stampar arm och handövningar och handklapp palmas. </h3>
+                                                <h3 class="ingress" mc:edit="arrangemang_content01">I flamencon är hållning och rytm viktiga element. Stilen kommer från sydspanien och har ett mycket varierat uttryckssätt från allvar till glädje. Lektionerna innehåller fotteknik olika stampar arm och handövningar och handklapp palmas. </h3>
                                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
-                                                <p>In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
-
+                                                <h3>Rubriken kommer här</h3>
+                                                <p>In enim justo, rhoncus ut, imperdiet a, <a href="">venenatis vitae, justo</a>. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.</p>
+                                                <blockquote>”Dessutom är vi ålagda att företa egen kvalitets det granskning, utvärdering och internkontroll. Det är det kan även förkomma att vi ur lokala register lämnar ut uppgifter till en kan man.”</blockquote>
+                                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
                                             </td>
                                         </tr>
                                     </table>
@@ -424,13 +441,13 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" class="templateBody" mc:repeatable="article" mc:variant=“Arrangemang”>
                                         <tr>
                                             <td class="bodyContent" style="padding:20px; padding-bottom: 0px;">
-                                                <img src="https://dl.dropboxusercontent.com/u/2367417/sensus_bild_placeholder_600.png" style="max-width:560px;" id="bodyImage" mc:label="body_image" mc:edit="body_image" mc:allowdesigner mc:allowtext />
+                                                <img src="https://dl.dropboxusercontent.com/u/2367417/sensus_bild_placeholder_600.png" style="max-width:560px;" id="bodyImage" mc:label="body_image" mc:edit="body_image" mc:allowdesigner />
                                             </td>
                                         </tr>
                                         <tr>
                                             <td valign="top" class="bodyContent">
                                                 <h1 mc:edit="arrangemang_content00">Flamenco snabbt tempo, avancerad dans</h1>
-                                                <h3 mc:edit="arrangemang_content01">I flamencon är hållning och rytm viktiga element. Stilen kommer från sydspanien och har ett mycket varierat uttryckssätt från allvar till glädje. Lektionerna innehåller fotteknik olika stampar arm och handövningar och handklapp palmas. </h3>
+                                                <h3 class="ingress" mc:edit="arrangemang_content01">I flamencon är hållning och rytm viktiga element. Stilen kommer från sydspanien och har ett mycket varierat uttryckssätt från allvar till glädje. Lektionerna innehåller fotteknik olika stampar arm och handövningar och handklapp palmas. </h3>
                                             </td>
                                         </tr>
                                         <tr>
@@ -495,24 +512,24 @@
                                     <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateFooter">
                                         <tr>
                                             <td valign="top" class="footerContent" mc:edit="footer_content00">
-                                                <a href="*|TWITTER:PROFILEURL|*">Follow on Twitter</a>&nbsp;&nbsp;&nbsp;<a href="*|FACEBOOK:PROFILEURL|*">Friend on Facebook</a>&nbsp;&nbsp;&nbsp;<a href="*|FORWARD|*">Forward to Friend</a>&nbsp;
+                                                <a href="*|TWITTER:PROFILEURL|*">Följ oss på Twitter</a>&nbsp;&nbsp;&nbsp;<a href="*|FACEBOOK:PROFILEURL|*">Lägg till oss på Facebook</a>&nbsp;&nbsp;&nbsp;<a href="*|FORWARD|*">Skicka vidare till någon</a>&nbsp;
                                             </td>
                                         </tr>
                                         <tr>
                                             <td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content01">
-                                                <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*, All rights reserved.</em>
+                                                <em>Copyright &copy; *|CURRENT_YEAR|* *|LIST:COMPANY|*</em>
                                                 <br />
                                                 *|IFNOT:ARCHIVE_PAGE|* *|LIST:DESCRIPTION|*
                                                 <br />
                                                 <br />
-                                                <strong>Our mailing address is:</strong>
+                                                <strong>Adress:</strong>
                                                 <br />
                                                 *|HTML:LIST_ADDRESS_HTML|* *|END:IF|* 
                                             </td>
                                         </tr>
                                         <tr>
                                             <td valign="top" class="footerContent" style="padding-top:0;" mc:edit="footer_content02">
-                                                <a href="*|UNSUB|*">unsubscribe from this list</a>&nbsp;&nbsp;&nbsp;<a href="*|UPDATE_PROFILE|*">update subscription preferences</a>&nbsp;
+                                                <a href="*|UNSUB|*">Jag vill inte längre ha dessa mejl</a>&nbsp;&nbsp;&nbsp;<a href="*|UPDATE_PROFILE|*">Uppdatera dina inställningar för detta nyhetsbrev</a>&nbsp;
                                             </td>
                                         </tr>
                                     </table>
